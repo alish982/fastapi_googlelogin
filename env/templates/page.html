@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      background: #fff;
+      padding: 24px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 260px;
+      text-align: center;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button, .google-button {
+      width: 100%;
+      padding: 8px;
+      background: #1a73e8;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 5px;
+      text-decoration: none;
+      display: inline-block;
+      text-align: center;
+    }
+    button:hover, .google-button:hover {
+      background: #1669c1;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <form>
+      <input type="email" placeholder="Email" >
+      <input type="password" placeholder="Password" >
+      <button type="submit">Sign in</button>
+    </form>
+
+    <a href="{{ url_for('login') }}" class="google-button">Google Sign IN</a>
+  </div>
+</body>
+</html>
